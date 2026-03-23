@@ -1,20 +1,18 @@
-def findVowels(value):
-    try:
-        if value in ["a","e","i","o","u"]:
-            result=f"{value} is a vowels"
+def findpositivenumber(number):
+    try:    
+        if number>=0 :
+            result="Positive number"
         else:
-            result=f"{value} is a consonant"   
+            result="Negative number"
     except Exception as e:
         result=str(e)
     finally:
-        return result   
-
-if __name__=="__main__":
+         return result
+if  __name__=="__main__":
     try:
-        value=input("Enter a value ")
+        num=int(input("Enter the number "))
     except Exception as e:
-        print(f"{str(e)}")
-    print(findVowels(value))    
-
-
+         result=str(e)
+    print(findpositivenumber(num))     
+    
 

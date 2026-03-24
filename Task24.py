@@ -1,0 +1,24 @@
+def finddivisible_3():
+    num=2
+    try:
+        try:
+            num=int(num)
+
+        except:
+            num=float(num)
+        
+        if num!=0:
+            if num%3!=0 :
+                result=f"{num} is not divisible by 3"
+
+            else:
+                result=f"{num} is a  divisible by 3"
+        else:
+            result="Given number is 0"
+    except Exception as e:
+        result=str(e)
+    finally:
+        print(result)
+finddivisible_3()
+
+
